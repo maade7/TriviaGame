@@ -243,7 +243,6 @@ function pick() {
 }
 
 function nextQuestion() {
-    console.log(question);
     if (question >= 20) {
         endGame()
     } else {
