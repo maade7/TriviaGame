@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url(../images/tumblr_oha80oCzGY1u2y46bo4_1280.jpg);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-attachment: fixed;
+}
+
+.container {
+    color: white;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: .01rem solid tan;
+    border-bottom: .01rem solid tan;
+}
+
+.btn {
+    position: relative;
+    top: -.2rem;
+    margin-left: .4rem;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-left: .1rem solid black;
+    text-align: left;
+}
+
+.btn:hover {
+    border-left: .1rem solid tan;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-weight: 300;
+    margin-top: .2rem;
+    font-size: .5rem;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: .7rem;
+    display: inline-flex;
+}
+
+#image {
+    font-weight: 300;
+}
+
+#question {
+    padding-bottom: .5rem;
+    border-bottom: .01rem solid tan;
+}
+
+#begin, #image-holder {
+    text-align: center;
+}
+
+.timerText {
+    position: relative;
+    top: .4rem;
+}
+
+#timer {
+    margin-right: 5rem;
+    width: 3rem;
+    height: 2rem;
+    color: white;
+    padding: .2rem;
+    background-color: tan;
+    border-right: .01rem solid tan;
+    border-left: .01rem solid tan;
+    position: relative;
+    top: -1.7rem;
+    font-size: .5rem;
+    float: right;
+    text-align: center;
+    background-image: url(../images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 270%;
+    filter: contrast(100%);
+    background-blend-mode: color-burn;
+    ;
+}
+
+#start {
+    outline: none;
+    color: white;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: .1rem solid white;
+    border-radius: 1rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 10rem;
+    background-size: contain;
+}
