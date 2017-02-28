@@ -1,5 +1,5 @@
-html, body {
-    max-height: 100%;
+body {
+    height: 100%;
     margin: 0;
 }
 
@@ -16,7 +16,7 @@ body {
 
 .container {
     color: white;
-    margin: 3rem;
+    margin: 3rem 3rem 1rem 3rem;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-top: .01rem solid tan;
@@ -39,7 +39,7 @@ body {
     border-left: .1rem solid tan;
 }
 
-h1 {
+h1, h3 {
     font-size: 1rem;
 }
 
@@ -74,8 +74,7 @@ h5 {
 }
 
 .wrapper {
-    min-height: calc(100vh - 6rem);
-    margin-bottom: -5rem;
+    min-height: calc(100vh - 9rem);
 }
 
 #timer {
@@ -127,10 +126,6 @@ footer {
 
 img {
     max-width: 100%;
-    max-height: 10rem;
+    max-height: calc(100vh - 17rem);
     background-size: contain;
-}
-
-n;
-
 }

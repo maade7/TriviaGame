@@ -177,6 +177,7 @@ $('#image').hide();
 
 $('#start').on('click', function() {
     $('#begin').hide();
+    $('#begin').prop('disabled', true);
     question = 0;
     count = 0;
     wins = 0;
@@ -186,6 +187,7 @@ $('#start').on('click', function() {
 });
 
 $('.btn').on('click', function() {
+    clearInterval(interval);
     self = this;
     if ($(self).attr('id') === correctAnswer.charAt(0)) {
         // correct
@@ -243,6 +245,7 @@ function pick() {
 }
 
 function nextQuestion() {
+    clearInterval(interval);
     if (question >= 20) {
         endGame()
     } else {
@@ -258,6 +261,7 @@ function nextQuestion() {
         $('#B').text(questions[question].B);
         $('#C').text(questions[question].C);
         $('#D').text(questions[question].D);
+        count = 0;
         clock()
     }
 }
@@ -287,4 +291,5 @@ function endGame() {
     $('#text').hide();
     $('#timer').hide();
     $('#begin').show();
+    $('#start').prop('disabled', false);
 }
